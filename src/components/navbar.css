@@ -1,0 +1,28 @@
+.navbar{
+    width: 100vw;
+    color: white;
+    background-color: rgb(12, 12, 12);
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar .links{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    align-items: center;
+}
+
+.navbar .links a{
+    color: white;;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar .header{
+    font-weight: bold;
+    font-size: 36px;
+}
