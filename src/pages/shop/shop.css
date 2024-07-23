@@ -1,0 +1,11 @@
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 10px 50px 10px 50px;
+}
+
+.title{
+    text-align: center;
+    padding: 20px;
+}
