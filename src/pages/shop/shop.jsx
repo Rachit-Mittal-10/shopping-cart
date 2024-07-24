@@ -1,6 +1,6 @@
 import React from 'react';
 import {PRODUCTS} from '../../product.js';
-import {Product} from './components/product';
+import {Product} from '../components/product';
 import './shop.css';
 
 export const Shop = () => {
