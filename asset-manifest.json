@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.7c52d43c.css",
-    "main.js": "/shopping-cart/static/js/main.e31f93ec.js",
+    "main.js": "/shopping-cart/static/js/main.19548e28.js",
     "static/media/Nikon_Camera.jpg": "/shopping-cart/static/media/Nikon_Camera.e437966f642b9bf7ab35.jpg",
     "static/media/Dell_Laptop.webp": "/shopping-cart/static/media/Dell_Laptop.94903f897e8c47a9e605.webp",
     "static/media/IPhone.webp": "/shopping-cart/static/media/IPhone.497e7093d0e199d925a6.webp",
     "index.html": "/shopping-cart/index.html",
     "main.7c52d43c.css.map": "/shopping-cart/static/css/main.7c52d43c.css.map",
-    "main.e31f93ec.js.map": "/shopping-cart/static/js/main.e31f93ec.js.map"
+    "main.19548e28.js.map": "/shopping-cart/static/js/main.19548e28.js.map"
   },
   "entrypoints": [
     "static/css/main.7c52d43c.css",
-    "static/js/main.e31f93ec.js"
+    "static/js/main.19548e28.js"
   ]
 }
