@@ -27,21 +27,17 @@ export const ShopContextProvider = (props) => {
     const updateQtyInCart = (itemID, newAmount) => {
         setCartItems((prev) => ({...prev, [itemID]: newAmount}));
     }
-    // As of 25 July 2024, getTotalAmountCart is not working. itemInfo is not getting defined properly
+    
     const getTotalAmountCart = () => {
         let totalAmount = 0;
-        for (let itemID in cartItems){
-            if(cartItems[itemID] > 0){
-                let itemInfo = PRODUCTS.find((product) => {
-                    return product.id === Number(itemID)
-                });
-                if(itemInfo){
-                    totalAmount += (itemInfo.price)*(cartItems[itemID]);
-                }
-            }
+        for (let item in cartItems) {
+          if (cartItems[item] > 0) {
+            let itemInfo = PRODUCTS.find((product) => product.productID === Number(item));
+            totalAmount += cartItems[item] * itemInfo.price;
+          }
         }
         return totalAmount;
-    }
+      };
 
     const checkout = () => {
         setCartItems(getDefaultCart());
