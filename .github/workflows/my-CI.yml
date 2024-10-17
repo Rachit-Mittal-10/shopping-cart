@@ -34,7 +34,7 @@ jobs:
             - name: Deploy Github Pages
               run: |
                 ls -Ar .
-                git rm -rf node_modules src public package* README.md .gitignore
+                git rm -rf src public package.json package-lock.json node_modules .gitignore README.md
                 git checkout gh-pages || git checkout --orphan gh-pages
                 cp -R ./build/* .
                 git rm -rf ./build
