@@ -24,7 +24,7 @@ jobs:
               run: npm run build
             
             - name: List Build Directory
-              run: ls -Ar ./build
+              run: ls -Ar .
 
             - name: Set Git User name and Email
               run: |
