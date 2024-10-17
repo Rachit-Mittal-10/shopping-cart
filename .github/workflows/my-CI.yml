@@ -34,11 +34,11 @@ jobs:
             - name: Deploy Github Pages
               run: |
                 git checkout gh-pages || git checkout --orphan gh-pages
-                git rm -rf .
-                git clean -fd
-                cp -r ./build/ ./
+                find . -not -name 'build' -not -name '.git' -exec rm -rf {} +
+                cp -R ./build/* .
+                git rm -rf ./build
                 git add .
                 git commit -m "Deployment"
-                git push origin gh-pages --force
+                git push origin gh-pages
               env:
                 GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
