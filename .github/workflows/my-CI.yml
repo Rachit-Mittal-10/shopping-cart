@@ -32,8 +32,8 @@ jobs:
               run: |
                 git checkout gh-pages || git checkout --orphan gh-pages
                 git rm -rf .
-                cp -R ./build/* ./
-                git add .
+                cp -r ./build/* ./
+                git add *
                 git commit -m "Deployment"
                 git push origin gh-pages --force
               env:
