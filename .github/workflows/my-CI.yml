@@ -24,7 +24,7 @@ jobs:
               run: npm run build
             
             - name: List Build Directory
-              run: ls -la ./build
+              run: ls -Ar ./build
 
             - name: Set Git User name and Email
               run: |
@@ -36,7 +36,7 @@ jobs:
                 git checkout gh-pages || git checkout --orphan gh-pages
                 git rm -rf .
                 git clean -fd
-                cp -r ./build/* ./
+                cp -r ./build/ ./
                 git add .
                 git commit -m "Deployment"
                 git push origin gh-pages --force
