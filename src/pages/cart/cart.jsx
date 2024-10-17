@@ -25,6 +25,7 @@ export const Cart = () => {
                     if(cartItems[product.productID]>0){
                         return (<CartItem data={product} key={product.productID}/>);
                     }
+                    return;
                 })
             }</div>
             <div className="checkout">
