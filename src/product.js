@@ -8,7 +8,7 @@ export const PRODUCTS = [
     {
         productID: 1,
         productName: "Nikon Camera",
-        price: 50000,
+        price: 75000,
         productImage: productImage1,
     },
     {
