@@ -33,13 +33,13 @@ jobs:
 
             - name: Deploy Github Pages
               run: |
-                ls -Ar .
                 git checkout gh-pages || git checkout --orphan gh-pages
-                git rm -rf src public package.json package-lock.json .gitignore node_modules README.md
-                cp -R ./build/* .
-                git rm -rf ./build
-                git add .
-                git commit -m "Deployment"
-                git push origin gh-pages
+                ls -Ar .
+                # git rm -rf src public package.json package-lock.json .gitignore node_modules README.md
+                # cp -R ./build/* .
+                # git rm -rf ./build
+                # git add .
+                # git commit -m "Deployment"
+                # git push origin gh-pages
               env:
                 GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
