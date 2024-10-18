@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.376b066c.css",
+    "main.js": "/static/js/main.d2645f34.js",
+    "static/media/Nikon_Camera.jpg": "/static/media/Nikon_Camera.e437966f642b9bf7ab35.jpg",
+    "static/media/Dell_Laptop.webp": "/static/media/Dell_Laptop.94903f897e8c47a9e605.webp",
+    "static/media/IPhone.webp": "/static/media/IPhone.497e7093d0e199d925a6.webp",
+    "index.html": "/index.html",
+    "main.376b066c.css.map": "/static/css/main.376b066c.css.map",
+    "main.d2645f34.js.map": "/static/js/main.d2645f34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.376b066c.css",
+    "static/js/main.d2645f34.js"
+  ]
+}
