@@ -1,5 +1,8 @@
 name: my-CI
 
+permissions:
+    contents: write
+
 on:
     push:
         branches: main
@@ -43,6 +46,6 @@ jobs:
                 ls -Ar .
                 git add .
                 git commit -m "Deployment"
-                git push origin gh-pages
+                git push --force origin gh-pages
               env:
                 GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
