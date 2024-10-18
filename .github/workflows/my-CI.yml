@@ -34,6 +34,9 @@ jobs:
             - name: Deploy Github Pages
               run: |
                 git checkout gh-pages || git checkout --orphan gh-pages
+                git rm -rf .
+                cp -R ./build/* .
+                ls -Ar .
                 git add -f ./build/*
                 git commit -m "Deployment"
                 git push origin gh-pages
