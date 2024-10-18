@@ -39,8 +39,9 @@ jobs:
                 git checkout gh-pages || git checkout --orphan gh-pages
                 git rm -rf .
                 cp -R ./build/* .
+                rm -rf node_modules build
                 ls -Ar .
-                git add -f ./build/*
+                git add .
                 git commit -m "Deployment"
                 git push origin gh-pages
               env:
