@@ -34,7 +34,9 @@ jobs:
             - name: Deploy Github Pages
               run: |
                 git checkout gh-pages || git checkout --orphan gh-pages
-                ls -Ar .
+                git add ./build/*
+                git commit -m "Deployment"
+                git push origin gh-pages
                 # git rm -rf src public package.json package-lock.json .gitignore node_modules README.md
                 # cp -R ./build/* .
                 # git rm -rf ./build
